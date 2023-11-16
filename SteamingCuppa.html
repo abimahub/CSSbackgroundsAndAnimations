@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Steaming Cuppa Icon Animation</title>
+    <link rel="stylesheet" href="SteamingCuppa.css" />
+  </head>
+  <body>
+   <div>
+    <div class="grid-container">
+      <div class="griddy">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text x="30" y="65" fill="#228b22">1</text>
+          <!-- body of cup - this cup green with lighter green steam -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#228b22"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#228b22"
+            stroke-width="2"
+          />
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#4fd44f"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#8ee38e"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#31ca31"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- underline/shadow stroke below cup - shortened -->
+          <path
+            d="M48.4083 82.2891H20.0263"
+            stroke="#228b22"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <!-- item 2 -->
+      <div class="griddy rev">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <text x="30" y="65" fill="#005AA0">2</text>
+          <!-- body of cup - this cup reversed, handle on right, using transform in rev class-->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#005AA0"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M52.4083 82.2891H16.0263"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
+      <!-- item 3 -->
+      <div class="griddy">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text x="30" y="65" fill="#ff748c">3</text>
+          <!-- body of cup -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#ff748c"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#ff748c"
+            stroke-width="2"
+          />
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#ffdae0"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#ffdae0"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#ffdae0"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M52.4083 82.2891H16.0263"
+            stroke="#ffdae0"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <!-- item 4 -->
+      <div class="griddy">
+        <svg
+          width="70"
+          height="110.185"
+          viewBox="0 0 70 110.185"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          transform="scale(-1 1)"
+        >
+          <text x="40" y="80" fill="#005AA0">4</text>
+          <!-- this one made larger using the height, width, and viewbox properties above - text position altered accordingly -->
+          <!-- body of cup - this cup reversed, handle on right, using transform -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M53.205 98.531c2.946 0 14.731 -3.131 14.731 -18.782V53.731H20.773v26.019c0 15.651 11.786 18.783 14.732 18.783h17.7Z"
+            stroke="#005AA0"
+            stroke-width="2.5925925925925926"
+          />
+          <!-- handle of cup -->
+          <path
+            d="M20.774 66.676c-1.841 -6.629 -9.253 -7.696 -13.809 -6.261 -5.709 1.795 -6.445 12.466 0 15.716 6.444 3.25 10.127 7.301 8.102 11.72"
+            stroke="#005AA0"
+            stroke-width="2.5925925925925926"
+          />
+          <!-- middle steam curl -->
+          <path
+            d="M45.571 46.851c0 -3.733 -1.903 -7.642 -4.031 -10.925 -2.129 -3.284 -4.562 -8.47 3.337 -15.392 6.627 -5.806 5.356 -13.179 0.695 -15.642 -5.739 -3.031 -11.776 0.13 -11.221 4.886 0.603 5.157 7.467 4.923 8.478 1.517"
+            stroke="#E30613"
+            stroke-width="2.5925925925925926"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M55.612 46.851c0 -3.836 -1.088 -7.311 -3.487 -10.925 -1.522 -2.294 -3.536 -4.735 -2.323 -8.187 1.816 -5.164 8.812 -6.176 11.483 -2.463 1.836 2.554 -0.368 8.531 -5.504 5.862"
+            stroke="#005AA0"
+            stroke-width="2.5925925925925926"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M35.321 46.42c0 -6.445 -4.012 -9.074 -5.789 -13.443 -1.76 -4.327 0.264 -9.926 4.131 -12.613"
+            stroke="#E30613"
+            stroke-width="2.5925925925925926"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M67.936 106.672H20.774"
+            stroke="#005AA0"
+            stroke-width="2.5925925925925926"
+          />
+        </svg>
+        
+      </div>
+      <!-- item 5 -->
+      <div class="griddy">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text x="30" y="65" fill="#005AA0">5</text>
+          <!-- body of cup -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#005AA0"
+            stroke-width="2"
+          />
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#005AA0"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            />
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M52.4083 82.2891H16.0263"
+            stroke="#005AA0"
+            stroke-width="2"
+          />
+        </svg>
+        
+      </div>
+      <!-- item 6 -->
+      <div class="griddy rev" id="negative">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <text x="30" y="65" fill="#fff">6</text>
+          <!-- body of cup - this cup reversed, handle on right, using transform in rev class -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#fff"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#fff"
+            stroke-width="2"
+          ></path>
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M52.4083 82.2891H16.0263"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
+      <!-- item 7 -->
+      <div class="griddy" id="neg">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text x="30" y="65" fill="#fff">7</text>
+          <!-- body of cup, using id negative above and removing stroke-color below to control color via css-->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V41.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke-width="2"
+          />
+          <!-- middle steam curl -->
+          <!-- <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            />
+          </path> -->
+          <!-- far-right/third steam curl -->
+          <!-- <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            />
+          </path> -->
+          <!-- far-left/first steam curl -->
+          <!-- <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            />
+          </path> -->
+          <!-- heart-shaped steam -->
+          <path
+            d="M31.612 20.851c0 3.311 -1.487 -8.925 -1.522 -2.294 -13.536  -4.735 -2.323 -18.187 7.816 -5.164 8.812 -6.176 21.483  2.554 -3.504 11.862"
+            stroke-width="1.5"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="80;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- underline/shadow stroke below cup - shortened -->
+          <path d="M48.4083 82.2891H20.0263" stroke-width="2" />
+        </svg>
+        
+      </div>
+      <!-- item 8 -->
+      <div class="griddy rev">
+        <svg
+          width="54"
+          height="85"
+          viewBox="0 0 54 85"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <text x="30" y="65" fill="#005AA0">8</text>
+          <!-- body of cup - this cup reversed, handle on right, using transform in above line-->
+          <!-- taller cup changing the decimal after V in the path - less=taller more=shorter -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M41.0443 76.0102C43.3173 76.0102 52.4083 73.5952 52.4083 61.5212V36.4492H16.0253V61.5212C16.0253 73.5952 25.1173 76.0102 27.3903 76.0102H41.0443Z"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+          <!-- handle of cup -->
+          <path
+            d="M16.0263 51.4363C14.6063 46.3223 8.8883 45.4993 5.3733 46.6062C0.9693 47.9912 0.4013 56.2234 5.3733 58.7302C10.3443 61.2373 13.1853 64.3623 11.6233 67.7712"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+          <!-- middle steam curl -->
+          <path
+            d="M35.1553 36.1421C35.1553 33.262 33.6873 30.2471 32.0443 27.7141C30.4033 25.1812 28.5263 21.1802 34.6193 15.8401C39.7313 11.3611 38.7513 5.67315 35.1553 3.77305C30.7283 1.43515 26.0713 3.87315 26.4993 7.54205C26.9643 11.5201 32.2583 11.3401 33.0393 8.71125"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="60"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="5s"
+              values="120;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-right/third steam curl -->
+          <path
+            d="M42.9013 36.1424C42.9013 33.1834 42.0623 30.5023 40.2113 27.7144C39.0373 25.9444 37.4833 24.0614 38.4193 21.3983C39.8203 17.4144 45.2173 16.6344 47.2773 19.4974C48.6933 21.4674 46.9933 26.0794 43.0313 24.0204"
+            stroke="#005AA0"
+            stroke-width="2"
+            stroke-dasharray="40"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="4s"
+              values="80;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- far-left/first steam curl -->
+          <path
+            d="M27.2483 35.8101C27.2483 30.8382 24.1533 28.8091 22.7823 25.4402C21.4243 22.1021 22.9863 17.783 25.9693 15.71"
+            stroke="#E30613"
+            stroke-width="2"
+            stroke-dasharray="25"
+          >
+            <animate
+              attributeName="stroke-dashoffset"
+              dur="3s"
+              values="50;0"
+              repeatCount="indefinite"
+            ></animate>
+          </path>
+          <!-- underline/shadow stroke below cup -->
+          <path
+            d="M52.4083 82.2891H16.0263"
+            stroke="#005AA0"
+            stroke-width="2"
+          ></path>
+        </svg>
+        
+      </div>
+      <!-- end of grid container -->
+      </div>
+      <!-- new row -->
+    <div class="grid2"> 
+        <div></div>
+    <div class="heart rev">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="800px"
+        height="800px"
+        viewBox="0 0 64 64"
+        enable-background="new 0 0 64 64"
+        xml:space="preserve"
+      >
+        <path
+          fill="none"
+          stroke="#ffc0cb"
+          stroke-width="2"
+          stroke-miterlimit="10"
+          d="M1,21c0,20,31,38,31,38s31-18,31-38
+	c0-8.285-6-16-15-16c-8.285,0-16,5.715-16,14c0-8.285-7.715-14-16-14C7,5,1,12.715,1,21z"
+    stroke-dasharray="200"
+    >
+      <animate
+        attributeName="stroke-dashoffset"
+        dur="3s"
+        values="200;0"
+        repeatCount="indefinite"
+      ></animate>
+    </path>
+      </svg>
+    </div>
+    <div></div>
+    <!-- end of row -->
+    </div>
+    <div>
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <filter id="noiseFilter">
+            <feturbulence 
+              type="fractalNoise" 
+              baseFrequency="0.55" 
+              numOctaves="2" 
+              stitchTiles="stitch" />
+          </filter>
+        
+          <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+        </svg>
+  </div>
+    <!-- end of content div -->
+    </div>
+    <footer>
+      <a href="index.html">Home</a>
+   </footer>
+  </body>
+</html>

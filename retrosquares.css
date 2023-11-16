@@ -1,0 +1,16 @@
+html, body {
+    background: royalblue;
+background: linear-gradient(90deg, skyblue 0%, crimson 50%, lemonchiffon 100%);
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background:#E9F1DF;
+	color: #191970;
+	padding: 10px;
+	border:#cf7a37 solid 3px;
+	align-items: center;
+	text-align: center;
+  }

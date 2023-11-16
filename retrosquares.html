@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="retrosquares.css">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+<title>retro squares background</title>
+</head>
+<body>
+    <css-doodle>
+        @grid: 10 / 100vw 100vh;
+@seed: 1676870616099;
+
+--c: royalblue, skyblue, ivory, lemonchiffon, crimson, #191970 ,
+cornflowerblue;
+--c1: @once.m7.pd.cycle(--c);
+--c2: @once.m7.pd.cycle(--c);
+--n: @calc(abs(@dx) + abs(@dy));
+
+animation: scale 4s ease infinite;
+animation-delay: calc(var(--n) * -.2s);
+
+@keyframes scale {
+  50% { transform: scale(0) }
+}
+background:
+  linear-gradient(@pn(--c1), @lp)
+  50%/50% 50% no-repeat
+  @pn(--c2);
+      </css-doodle>
+      <footer>
+        <a href="index.html">Home</a>
+     </footer> 
+</body>
+</html>

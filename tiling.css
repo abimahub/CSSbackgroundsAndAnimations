@@ -1,0 +1,25 @@
+  html, body {
+    margin: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #333;
+    color:ivory;
+  }
+  
+  button {
+    margin-top: 1em;
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:#E9F1DF;
+    color: #191970;
+    padding: 10px;
+    border:#cf7a37 solid 3px;
+    align-items: center;
+    text-align: center;
+    }

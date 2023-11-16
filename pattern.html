@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pattern.css">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <title>Pattern Css background</title>
+</head>
+<body>
+    <css-doodle>
+        @grid: 16x10 / 100% auto 1.8;
+@size: @r(15%, 99%);
+
+animation: scale 4s ease infinite;
+animation-delay: calc(var(--n) * -.2s);
+@keyframes scale {
+    50% { transform: scale(0) }
+  }
+  background: @p(#282846, orangered, skyblue);
+margin: auto;
+border: 1px solid #282846;
+border-radius: @p.cycle(48% 0 0 0);
+    </css-doodle>
+
+    <footer>
+        <a href="index.html">Home</a>
+     </footer>
+</body>
+</html>

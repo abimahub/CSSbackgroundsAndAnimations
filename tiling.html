@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pausing CSS animation</title>
+    <link rel="stylesheet" href="tiling.css">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+   
+</head>
+<body>
+    <h1>tiling - Pausing CSS animation using css-doodle</h1>
+    <p>NB: Play in Chrome as Firefox doesn't work the same way.</p>
+    <graph>
+        <css-doodle>
+          @grid: 1 / 80vmin; 
+          border: 10px solid #fff;
+          background: @shaders(
+            texture_0 {
+              background: linear-gradient(
+                @r(360deg),
+                @stripe.@m10.@pn(#d62828, #fcbf49, #eae2b7, #000) 
+              );
+            }
+            fragment {
+              #define TAU (2. * 3.141593)
+              void main() {
+                vec2 ur = u_resolution;
+                vec2 c = vec2(.5, .5);
+                vec2 p = gl_FragCoord.xy / ur.xy - c;
+                float r = length(p);
+                float len = length(p * vec2(ur.x / ur.y, 1.));
+                float angle = atan(p.y, p.x) 
+                  + TAU * smoothstep(.75, 0., len) 
+                  + cos(u_time);
+                vec2 coords = c + vec2(r * cos(angle + u_time), r * sin(angle));
+                FragColor = texture(texture_0, coords);
+              }
+            }
+          );
+        </css-doodle>
+        <button>Toggle Animation</button> 
+      </graph>
+      <footer>
+        <a href="index.html">Home</a>
+     </footer> 
+      <script src="tiling.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  linear-gradient(#87f745 2px, transparent 2px), linear-gradient(90deg, #87f745 2px, transparent 2px), linear-gradient(#87f745 1px, transparent 1px), linear-gradient(90deg, #87f745 1px, #e5e5f7 1px);
+background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background:#E9F1DF;
+	color: #191970;
+	padding: 10px;
+	border:#cf7a37 solid 3px;
+	align-items: center;
+	text-align: center;
+  }
+a {
+	color: #191970;
+}

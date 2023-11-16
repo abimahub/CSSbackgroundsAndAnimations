@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater CSS animation</title>
+    <link rel="stylesheet" href="underwater.css">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+</head>
+<body>
+    <h1>underwater - CSS animation using css-doodle</h1>
+    <css-doodle>
+        <style>
+          @grid: 30 / 80vmin;
+          @shape: circle;
+
+    
+          background:cyan;
+          scale: 0;
+          opacity: 0;
+          animation: m 6s linear infinite;
+          
+          animation-delay: calc(
+            -1s/@I * @i * @sin(@i)
+          );
+          filter: @svg-filter(
+            feTurbulence {
+              type: fractalNoise;
+              baseFrequency: .01 .5;
+            }
+            feDisplacementMap {
+             in: SourceGraphic;
+             scale: 50;
+            }
+          );
+
+          @keyframes m {
+            0%, 50%, 90% { scale: 1; opacity: 1 }
+            25%, 75%, 100% { scale: 0; opacity: 0 }
+          }
+        
+        </style>      
+       </css-doodle>
+       <footer>
+        <a href="index.html">Home</a>
+     </footer> 
+</body>
+</html>
