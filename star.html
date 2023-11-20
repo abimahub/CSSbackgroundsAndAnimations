@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <title>Cute star Css background</title>
+    <style> body, a{background-color: #673AB7; color:#d9f0f6;}</style>
+</head>
+<body>
+    <css-doodle>
+    :doodle {
+        @grid: 8 / 88vw 92vh / #d9f0f6;
+      clip-path: @shape(bud, 5);
+    }    
+    clip-path: @shape(bud, 5);
+    background: hsla(
+      calc(300 + 3 * @index()), 75%, 70%, @rand(.8) 
+    );
+    transition: .2s ease @rand(.3s);
+    transform: 
+      scale(@rand(.2, .9))
+    translate3d(
+        @rand(-25%, 25%),
+        @rand(-50%, 50%),
+        0
+      );
+    animation: m 8s linear infinite;
+    animation-delay: calc(
+        -1s/@I * @i * @sin(@i)
+        );
+    @keyframes m {
+        0%, 50%, 90% { scale: 1; opacity: 1 }
+        25%, 75%, 100% { scale: 0; opacity: 0 }
+        }
+  </css-doodle>
+  
+  <footer>
+    <p>Based on a css-doodle snip on <a href="https://codepen.io/yuanchuan/pen/VWYKVO">codepen</a> by Yuanchuan. | <a href="index.html">Home</a></p>
+ </footer>
+ <script src="star.js"></script>
+</body>
+</html>

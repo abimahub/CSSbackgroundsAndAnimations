@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <title>Swirl Css background</title>
+    <style>.grid-container {
+        display: grid;
+        grid:auto/ auto auto auto;
+        grid-gap: 10px;
+        }</style>
+</head>
+<body>
+    <div class="grid-container">
+    <div>
+    <css-doodle>
+    @grid: 6x1 / 320px;
+
+    @place: @plot(r: .3; dir: auto -120);
+    @size: 50%;
+
+    border-radius: 50%;
+    box-shadow: 50px 0 0 -10px
+    hsl(calc(360/@I*@i) 90% 60%);
+    animation: m 12s linear infinite;
+    animation-delay: calc(
+        -1s/@I * @i * @sin(@i)
+        );
+    @keyframes m {
+        0%, 50%, 90% { scale: 1; opacity: 1 }
+        25%, 75%, 100% { scale: 0; opacity: 0 }
+        }
+</css-doodle>
+<label>animation of the rainbow swirl from css-doodle.com</label>
+</div>
+<div>
+    <css-doodle>
+    @grid: 6x1 / 320px;
+
+    @place: @plot(r: .3; dir: auto -240);
+    @size: 50%;
+
+    border-radius: 50%;
+    box-shadow: 50px 0 0 -10px
+    hsl(calc(160/@I*@i) 60% 40%);
+    <!-- animation: m 12s linear infinite;
+    animation-delay: calc(
+        -1s/@I * @i * @sin(@i)
+        );
+    @keyframes m {
+        0%, 50%, 90% { scale: 1; opacity: 1 }
+        25%, 75%, 100% { scale: 0; opacity: 0 }
+        } -->
+</css-doodle>
+<label>swirled in the other direction and with changed colour scheme and shading</label>
+</div>
+<div>
+    <css-doodle>
+    @grid: 6x1 / 320px;
+
+    @place: @plot(r: .3; dir: auto -240);
+    @size: 50%;
+
+    border-radius: 50%;
+    box-shadow: 50px 0 0 -10px
+    hsl(calc(40/@I*@i) 90% 50%);
+    animation: m 12s linear infinite;
+    animation-delay: calc(
+        -1s/@I * @i * @sin(@i)
+        );
+    @keyframes m {
+        0%, 50%, 90% { scale: 1; opacity: 1 }
+        25%, 75%, 100% { scale: 0; opacity: 0 }
+        }
+</css-doodle>
+<label>swirled in the other direction and with changed colour scheme and shading, animated</label>
+</div>
+</div>
+<br><br>
+<footer>
+    <a href="index.html">Home</a>
+ </footer>
+</body>
+</html>

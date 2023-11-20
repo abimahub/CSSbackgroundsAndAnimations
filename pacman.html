@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <title>Pacman-style background</title>
+    
+</head>
+<body>
+    <css-doodle>
+        @grid: 6 / 60vw 60vh / #fffef4;
+  background-size: 200px 200px;
+  background-image: 
+    @size: 80px;
+    font-size: 60px;
+@random { border-top: 5px solid #60569e; }
+@random { border-left: 5px solid #60569e; }
+@random(.2) {
+  :after {
+    content: '';
+    background: hsl(@rand(360), 60%, 70%);
+    @size: @rand(12px);
+  }
+}
+  
+</css-doodle>
+<p>This is background taken from <a href="https://css-doodle.com" target="_blank">css-doodle</a>, if you refresh the page the maze will be redrawn.</p>
+<footer>
+  <a href="index.html">Home</a>
+</footer>
+</body>
+</html>

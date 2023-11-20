@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
+    <title>Leaves Css background</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <css-doodle>
+        :doodle {
+            @grid: 8 / 90%;
+            @shape: circle;
+          }
+          
+          transition: .2s @r(.6s);
+          border-radius: @pick(100% 0, 0 100%);
+          transform: scale(@r(.25, 1.25));
+          
+          background: hsla(
+            calc(240 - 6 * @x * @y),
+            70%, 68%, @r.8
+          );
+</css-doodle>
+
+<!-- flowers
+<css-doodle click-to-update>
+    <style>
+      @grid: 7 / 100vmax / #0a0c27;
+      @shape: clover 5;
+      background: hsla(-@i(*4), 70%, 68%, @r.8);
+      transform:
+        scale(@r(.2, 1.5))
+        translate(@m2.@r(±50%));
+    </style>
+  </css-doodle> -->
+
+<footer>
+    <a href="index.html">Home</a>
+ </footer>
+</body>
+</html>
