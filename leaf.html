@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/css-doodle@0.37.3/css-doodle.min.js"></script>
     <title>Leaves Css background</title>
-    <style>
-        body { margin: 0; overflow: hidden; }
-    </style>
+    <style>.grid-container {
+      display: grid;
+      grid:83%/ auto auto auto;
+      grid-gap: 10px;
+      }</style>
 </head>
 <body>
-    <css-doodle>
+  <div class="grid-container">
+    <div>
+      <css-doodle click-to-update>
         :doodle {
-            @grid: 8 / 90%;
+            @grid: 8 / 820px;
             @shape: circle;
           }
           
@@ -24,22 +28,18 @@
             calc(240 - 6 * @x * @y),
             70%, 68%, @r.8
           );
-</css-doodle>
-
-<!-- flowers
-<css-doodle click-to-update>
-    <style>
-      @grid: 7 / 100vmax / #0a0c27;
-      @shape: clover 5;
-      background: hsla(-@i(*4), 70%, 68%, @r.8);
-      transform:
-        scale(@r(.2, 1.5))
-        translate(@m2.@r(±50%));
-    </style>
-  </css-doodle> -->
-
+    </css-doodle>
+</div>
+</div>
 <footer>
-    <a href="index.html">Home</a>
- </footer>
+  <h1>click pattern to update &nbsp | &nbsp <a href="index.html">Home</a></h1>
+</footer>
+<script>
+  body.addEventListener('click', function(e) {
+  if (e.target.matches('css-doodle')) {
+    e.target.refresh();
+  }  
+})
+</script>
 </body>
 </html>
